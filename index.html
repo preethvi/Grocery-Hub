@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grocery Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="container">
+      <span>📞 +1 234‑567‑8901</span>
+      <span>📍 Current Location</span>
+      <span>👤 My Account</span>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-flex">
+      <img src="images/veg.jpg" alt="">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#deals">Deals</a></li>
+      </ul>
+      <div class="nav-icons">
+        <input type="text" placeholder="Search groceries...">
+        <button>🔍</button>
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="section home">
+    <h2>Welcome to Grocery Hub</h2>
+   
+      <!-- Index -->
+       <div class="index-container">
+        <div class="left-side">
+          <h1>Fresh Groceries Delivered <br>
+          To Your DoorStep</h1>
+          <p>Emphasizing the Store's Commitment to providing <br>
+          fresh Produce and product Daily.</p>
+          <button> <a href="#deals">Shop Now</a></button>
+        </div>
+        <div class="right-side">
+<img src="images/image 1.png" alt="">
+        </div>
+        
+       </div>
+
+ 
+      <!-- Placeholder images -->
+       <div class="grid-4x4">
+        <h1>Groceries</h1>
+       <div class="img-folder">
+       <div>
+       <img src="images/Banana Yelakki.png" alt="Item1">
+       <p>Banana Yelakki</p>
+       </div>
+       <div>
+      <img src="images/Breakfast Cereals J.png" alt="Item2">
+      <p>Breakfast Cereals</p>
+      </div>
+      <div>
+      <img src="images/Chicken Liver Cut Pieces U.png" alt="Item3">
+      <p>Chicken Liver</p>
+      </div>
+      <div>
+      <img src="images/Apple Royalgala.png" alt="Item4">
+      <p>Apple</p>
+      </div>
+      <div>
+      <img src="images/Dry Fruits I.png" alt="Item5">
+      <p>Dry Fruits</p>
+      </div>
+      <div>
+      <img src="images/Banana Robusta.png" alt="Item1">
+      <p>Banana Robusta</p>
+      </div>
+      <div>
+      <img src="images/masala1.jpg" alt="Item2">
+      <p>Masala</p>
+      </div>
+      <div>
+      <img src="images/Dry Fruits I.png" alt="Item3">
+      <p>Dry Fruits</p>
+      </div>
+      <div>
+      <img src="images/Milky Mist Paneer-P.png" alt="Item4">
+      <p>Milky Mist Paneer</p>
+      </div>
+      <div>
+      <img src="images/Nandini Goodlife Milk 180ML.png" alt="Item5">
+      <p>Goodlife Milk</p>
+      </div>
+      <div>
+      <img src="images/chat.jpg" alt="Item5">
+      <p>chat Masala</p>
+      </div>
+      <div>
+      <img src="images/tea.jpg" alt="Item5">
+      <p>Tea Powder</p>
+      </div>
+      <div>
+      <img src="images/oil.jpg" alt="Item5">
+      <p>Oil</p>
+      </div>
+      <div>
+      <img src="images/masala.jpg" alt="Item5">
+      <p>Masala</p>
+      </div>
+      <div>
+      <img src="images/gram.jpg" alt="Item5">
+      <p>Gram</p>
+      </div>
+    
+    </div></div>
+  </section>
+
+  <!-- Categories -->
+ <section id="categories" class="section-categories">
+  <h1>Categories</h1>
+  <h3>Meats</h3>
+  <div class="category-cards">
+    <div class="category-1">
+      <div class="cat-card">
+        <div onclick="showDetail('Chicken Boneless', 'images/Chicken Boneless Breast Fillet.png')">
+          <img src="images/Chicken Boneless Breast Fillet.png" alt="Meats">
+          <p>Chicken Boneless</p>
+        </div>
+        <div onclick="showDetail('Mutton', 'images/mutton.jpg')">
+          <img src="images/mutton.jpg" alt="Meats">
+          <p>Mutton</p>
+        </div>
+        <div onclick="showDetail('Chicken', 'images/chicken.jpg')">
+          <img src="images/chicken.jpg" alt="Meats">
+          <p>Chicken</p>
+        </div>
+        <div onclick="showDetail('Prawn', 'images/prawn.jpg')">
+          <img src="images/prawn.jpg" alt="Meats">
+          <p>Prawn</p>
+        </div>
+        <div onclick="showDetail('Fish', 'images/fish.jpg')">
+          <img src="images/fish.jpg" alt="Meats">
+          <p>Fish</p>
+        </div>
+      </div>
+    </div>
+  
+
+  <h3>Vegetables & Fruits</h3>
+  <div class="category-2">
+    <div class="cat-card">
+      <div onclick="showDetail('Tomato', 'images/tomato.jpg')">
+        <img src="images/tomato.jpg" alt="Veg & Fruit">
+        <p>Tomato</p>
+      </div>
+      <div onclick="showDetail('Brinjal', 'images/brinjal.jpg')">
+        <img src="images/brinjal.jpg" alt="Veg & Fruit">
+        <p>Brinjal</p>
+      </div>
+      <div onclick="showDetail('Brocoli', 'images/brocoli.jpg')">
+        <img src="images/brocoli.jpg" alt="Veg & Fruit">
+        <p>Brocoli</p>
+      </div>
+      <div onclick="showDetail('Cucumber', 'images/cucumber.jpg')">
+        <img src="images/cucumber.jpg" alt="Veg & Fruit">
+        <p>Cucumber</p>
+      </div>
+      <div onclick="showDetail('Mango', 'images/mango.jpg')">
+        <img src="images/mango.jpg" alt="Veg & Fruit">
+        <p>Mango</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Milk Products</h3>
+  <div class="category-3">
+    <div class="cat-card">
+      <div onclick="showDetail('Curd', 'images/Nandini Fresh Curd 500GM.png')">
+        <img src="images/Nandini Fresh Curd 500GM.png" alt="Milk">
+        <p>Curd</p>
+      </div>
+      <div onclick="showDetail('Cheese', 'images/milk1.jpg')">
+        <img src="images/milk1.jpg" alt="Milk">
+        <p>Cheese</p>
+      </div>
+      <div onclick="showDetail('Cream', 'images/milk2.jpg')">
+        <img src="images/milk2.jpg" alt="Milk">
+        <p>Cream</p>
+      </div>
+      <div onclick="showDetail('Ghee', 'images/milk3.jpg')">
+        <img src="images/milk3.jpg" alt="Milk">
+        <p>Ghee</p>
+      </div>
+      <div onclick="showDetail('Butter', 'images/milk4.jpg')">
+        <img src="images/milk4.jpg" alt="Milk">
+        <p>Butter</p>
+      </div>
+    </div>
+  </div>
+      <h3>Snacks</h3>
+<div class="category-4">
+  <div class="cat-card">
+    <div onclick="showDetail('Lays', 'images/chips.jpg')">
+      <img src="images/chips.jpg" alt="Snacks">
+      <p>Lays</p>
+    </div>
+    <div onclick="showDetail('Gems', 'images/snack5.jpg')">
+      <img src="images/snack5.jpg" alt="Snacks">
+      <p>Gems</p>
+    </div>
+    <div onclick="showDetail('Cates Shake', 'images/snack4.jpg')">
+      <img src="images/snack4.jpg" alt="Snacks">
+      <p>Cates Shake</p>
+    </div>
+    <div onclick="showDetail('Groundnut Chaki', 'images/snack3.jpg')">
+      <img src="images/snack3.jpg" alt="Snacks">
+      <p>Groundnut Chaki</p>
+    </div>
+    <div onclick="showDetail('Chips', 'images/snack2.jpg')">
+      <img src="images/snack2.jpg" alt="Snacks">
+      <p>Chips</p>
+    </div>
+  </div>
+</div></div>
+    </div>
+    <div id="detail-card" class="detail-card" style="display:none;">
+      <div class="detail-content">
+        <h3 id="detail-title"></h3>
+        <img id="detail-img" src="" alt="">
+        <p>Detailed info about <span id="detail-title-copy"></span>.</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+    </section>
+  
+
+  <!-- Deals Placeholder -->
+  <section id="deals" class="section deals">
+    <h1>Deals & Offers</h1>
+    <div class="offer">
+      <div class="left-off">
+       
+        <img src="images/offer2.jpg" alt="">
+      
+      </div>
+      <div class="right-off">
+        
+        <img src="images/offer1.jpg" alt="">
+        
+      </div>
+    </div>
+     <section id="categories" class="section-categories">
+  
+     
+    <div class="category-cards">
+      <h2>Top Selling 25% OFF</h2>
+      <section id="categories" class="section-categories">
+  
+  <h3>Meats</h3>
+  <div class="category-cards">
+    <div class="category-1">
+      <div class="cat-card">
+        <div class="card">
+        <div onclick="showDetail('Chicken Boneless', 'images/Chicken Boneless Breast Fillet.png')">
+          <img src="images/Chicken Boneless Breast Fillet.png" alt="Meats">
+          <p>Chicken Boneless <br></p>
+          <p>&#8377; 120</p>
+        </div></div>
+        <div class="card">
+        <div onclick="showDetail('Mutton', 'images/mutton.jpg')">
+          <img src="images/mutton.jpg" alt="Meats">
+          <p>Mutton</p>
+          <p>&#8377; 300</p>
+        </div></div>
+        <div class="card">
+        <div onclick="showDetail('Chicken', 'images/chicken.jpg')">
+          <img src="images/chicken.jpg" alt="Meats">
+          <p>Chicken</p>
+           <p>&#8377; 80</p>
+        </div></div>
+        <div class="card">
+        <div onclick="showDetail('Prawn', 'images/prawn.jpg')">
+          <img src="images/prawn.jpg" alt="Meats">
+          <p>Prawn</p>
+           <p>&#8377; 100</p>
+        </div></div>
+        <div class="card">
+        <div onclick="showDetail('Fish', 'images/fish.jpg')">
+          <img src="images/fish.jpg" alt="Meats">
+          <p>Fish</p>
+           <p>&#8377; 140</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+      <h2>Best Deals Up To 20% OFF</h2>
+        <div class="category-2">
+      <div class="category-2">
+    <div class="cat-card">
+      <div class="card">
+      <div onclick="showDetail('Tomato', 'images/tomato.jpg')">
+        <img src="images/tomato.jpg" alt="Veg & Fruit">
+        <p>Tomato</p>
+         <p>&#8377; 30</p>
+      </div></div>
+      <div class="card">
+      <div onclick="showDetail('Brinjal', 'images/brinjal.jpg')">
+        <img src="images/brinjal.jpg" alt="Veg & Fruit">
+        <p>Brinjal</p>
+         <p>&#8377; 40</p>
+      </div></div>
+      <div class="card">
+      <div onclick="showDetail('Brocoli', 'images/brocoli.jpg')">
+        <img src="images/brocoli.jpg" alt="Veg & Fruit">
+        <p>Brocoli</p>
+         <p>&#8377; 45</p>
+      </div></div>
+      <div class="card">
+      <div onclick="showDetail('Cucumber', 'images/cucumber.jpg')">
+        <img src="images/cucumber.jpg" alt="Veg & Fruit">
+        <p>Cucumber</p>
+         <p>&#8377; 20</p>
+      </div></div>
+      <div class="card">
+      <div onclick="showDetail('Mango', 'images/mango.jpg')">
+        <img src="images/mango.jpg" alt="Veg & Fruit">
+        <p>Mango</p>
+         <p>&#8377; 25</p>
+      </div></div>
+    </div>
+  </div>
+      <h2>Trending Items</h2>
+        <div class="category-3">
+      <h3>Snacks</h3>
+<div class="category-4">
+  <div class="cat-card">
+    <div class="card">
+    <div onclick="showDetail('Lays', 'images/chips.jpg')">
+      <img src="images/chips.jpg" alt="Snacks">
+      <p>Lays</p>
+       <p>&#8377; 20</p>
+    </div></div>
+    <div class="card">
+    <div onclick="showDetail('Gems', 'images/snack5.jpg')">
+      <img src="images/snack5.jpg" alt="Snacks">
+      <p>Gems</p>
+       <p>&#8377; 35</p>
+    </div></div>
+    <div class="card">
+    <div onclick="showDetail('Cates Shake', 'images/snack4.jpg')">
+      <img src="images/snack4.jpg" alt="Snacks">
+      <p>Cates Shake</p>
+       <p>&#8377; 40</p>
+    </div></div>
+    <div class="card">
+    <div onclick="showDetail('Groundnut Chaki', 'images/snack3.jpg')">
+      <img src="images/snack3.jpg" alt="Snacks">
+      <p>Groundnut Chaki</p>
+       <p>&#8377; 30</p>
+    </div></div>
+    <div class="card">
+    <div onclick="showDetail('Chips', 'images/snack2.jpg')">
+      <img src="images/snack2.jpg" alt="Snacks">
+      <p>Chips</p>
+       <p>&#8377; 25</p>
+    </div></div>
+  </div>
+</div>
+
+
+      
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="left-ftr">
+        <div>
+        <img src="images/veg.jpg" alt=""></div>
+        <div>
+<p>
+  
+  GroceryHub brings its customers low price every day.we offer a wide choice convincing <br> fresh and packaged foods,grains,pulses,dairy,frozen, plastics,utensils,crockery,travel, <br>stationery & more. SPAR has 13,900 stores in 48 countries in india.
+</p></div>
+      </div>
+      <div class="right-ftr">
+        <div>
+          
+          <h5>Our Services</h5>
+          <ul>
+            <li>Your Account</li>
+            <li>FAQS</li>
+            <li>Store List</li>
+          </ul>
+
+        </div>
+        <div>
+          <h5>Let Us Help</h5>
+          <ul>
+            <li>Help & support</li>
+            <li>Share & Feedback</li>
+            <li>Call Us</li>
+          </ul>
+
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li>About Us</li>
+            <li>Terms</li>
+            <li>Privacy Policy</li>
+          </ul>
+
+        </div>
+      </div>
+      
+     
+    </div>
+     <div class="btm-ftr">
+        <h6>GroceryHub India @ All Rights Reserved.</h6>
+      </div>
+  </footer>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
