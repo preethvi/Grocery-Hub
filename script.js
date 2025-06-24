@@ -21,8 +21,10 @@ function showDetail(title, imgUrl) {
 
 function addToCart() {
   alert("🛒 Added to cart!");
+  document.getElementById('detail-card').style.display = 'none';
 }
 
+// No need to change the window.onclick function
 window.onclick = e => {
   const box = document.getElementById('detail-card');
   if (e.target === box) box.style.display = 'none';
